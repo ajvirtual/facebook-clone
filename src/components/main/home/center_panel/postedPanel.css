@@ -1,0 +1,224 @@
+        /* HEADING */
+.heading-posted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .7em;
+}
+.post-visibility svg {
+    font-size: 1em;
+}
+.option-heading-icon {
+    font-size: 1.3em;
+}
+
+.option-heading-icon:hover {
+    background: var(--fb-third-background);
+    transition: all linear .2s;
+}
+
+.poster-subject {
+    display: flex;
+    align-items: center;
+    column-gap: .5em;
+}
+span.poster-name-timing {
+    display: flex;
+    flex-direction: column;
+    line-height: 110%;
+}
+span.poster-name {
+    font-weight: bold;
+}
+
+.poster-avatar, span.poster-name, .option-heading-icon {
+    cursor: pointer;
+}
+
+        /* HEADING */
+
+        /* POST CONTENT */
+
+span.media-content {
+    transform: scale(1.057);
+    margin-bottom: .7em;
+    margin-top: .7em;
+    background-color: black;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .3em;
+}
+
+span.text-content {
+    margin-bottom: .7em;
+}
+
+span.media-content span {
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+    /* POST CONTENT */
+
+    /* LIKE - REACT - SHARE */
+.react-comm-share {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: .5em;
+    border-bottom: 1px solid var(--fb-third-background);
+    height: max-content;
+}
+
+span.react-post, span.comment-post, span.share-post {
+    padding: .4em 2em;
+    margin-top: .2em;
+    margin-bottom: .2em;
+    display: flex;
+    column-gap: .5em;
+    border-radius: .5em;
+}
+
+span.react-post:hover, span.comment-post:hover, span.share-post:hover {
+    background: var(--fb-third-background);
+    transition: all linear .2s;
+    cursor: pointer;
+}
+
+span.react-post div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: .6em;
+}
+
+.like-post-container {
+    position: relative;
+}   
+.react-list-choice {
+    position: absolute;
+    top: -3.2em;
+    left: -1em;
+    z-index: 99;
+    background: var(--fb-third-background);
+    display: flex;
+    column-gap: .3em;
+    padding: .4em .4em;
+    border-radius: 2em;
+    width: max-content;
+}
+
+span.react-list-choice span img {
+    width: 2.1em;
+    height: 2em;
+    cursor: pointer;
+}
+
+.react-list-choice span:hover {
+    transform: scale(1.2);
+    transition: all linear;
+}
+
+    /* LIKE - REACT - SHARE */
+
+    /* STATISTICS : REACT - COMMENT - SHARE  */
+
+.stat-rcs-post {
+    display: flex;
+    align-items: center;
+    height: 2.3em;
+    border-bottom: 1px solid var(--fb-third-background);
+    justify-content: space-between;
+}
+span.react-stat-post {
+    display: flex;
+    align-items: center;
+    column-gap: .7em;  
+}
+
+span.cs-stat-post {
+    display: flex;
+    column-gap: .7em;
+}
+
+span.cs-stat-post span:hover, span.react-stat-post span:hover {
+    text-decoration: underline;
+}
+
+.liked-icon {
+    color: var(--fb-blue);
+}
+
+.react-stat-little-icon {
+    display: flex;
+    align-items: center;
+}
+
+span.react-stat-little-icon span {
+    display: flex;
+}
+
+span.react-stat-little-icon img {
+    height: 1.05em;
+    width: 1.05em;
+    cursor: pointer;
+    margin-left: -3px;
+}
+
+    /* STATISTICS : REACT - COMMENT - SHARE  */
+   
+     /* COMMENT PANEL */
+
+.comment-panel-post {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+span.input-comment-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 10em;
+    background: var(--fb-third-background);
+    padding-right: .7em;
+    padding-left: .7em;
+}
+     /* COMMENT PANEL */
+.add-comment-post {
+    display: flex;
+    column-gap: .7em;
+}
+span.input-comment-post input {
+    outline: none;
+    border-radius: 10em;
+    border: none;
+    width: 80%;
+    height: 2.3em;
+    background: transparent;
+    width: 18em;
+    color: var(--fb-white-font);
+}
+
+span.add-comment-tools {
+    display: flex;
+    column-gap: .3em;
+}
+
+span.add-comment-tools > span {
+    cursor: pointer;
+    padding: .2em .2em;
+    border-radius: 50%;
+}
+
+span.add-comment-tools > span:hover {
+    background: var(--fb-fourth-background);
+    transition: all linear .2s;
+}
+    /* COMMENT PANEL */

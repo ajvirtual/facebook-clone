@@ -1,0 +1,9 @@
+.home_main_container {
+    /* display: grid;
+    grid-template-columns: 23% 48% 23%; */
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    padding-top: 1.5em;
+    position: relative;
+}   

@@ -1,0 +1,84 @@
+:root {
+    --active-icon: #2d88ff; /* the active icon color */
+    --search-input-font: white; /* the input color search */ 
+    --inactive-icon: #b0b3b8; /* the inactive icon color */
+    --onhover-icon: #3a3b3c; /* the icon color while hovered */
+    --icon-mid-lg-size: scale(1.2); /* the icon size while large device according to bootstrap */
+    --icon-bloc-lg-size: 1em 2.8em; /* the block size while medium device according to bootstrap */
+    --icon-bloc-md-size: 1em 1.3em; /* the block size while medium device according to bootstrap */
+    --icon-bloc-sm-size: .5em .7em; /* the block size while small device according to bootstrap */
+    --active-lg-bord-bottom: 5px;
+    --active-md-bord-bottom: 3px;
+}
+
+.menu-header-bar {
+    list-style: none;   
+    color: var(--search-input-font);
+}
+
+.menu-header-bar svg {
+    transform: var(--icon-mid-lg-size);
+}
+
+.menu-header-bar li svg{
+   fill: var(--inactive-icon);
+}
+
+.menu-header-bar span {
+    padding: var(--icon-bloc-lg-size);
+    padding-top: .8em;
+    margin-left: .5em;
+    margin-right: .5em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 921px) {
+    .menu-header-bar span {
+        padding: var(--icon-bloc-md-size);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .menu-header-bar span {
+        padding: var(--icon-bloc-sm-size);
+    }
+}
+
+
+.menu-header-bar .menu-nav-active {
+    position: relative;
+    display: inherit;   
+}
+
+.menu-header-bar li span:hover {
+    background-color: var(--onhover-icon);
+    transition: all linear .15s;
+}
+
+.menu-header-bar li{
+    text-align: center;
+}
+
+.menu-header-bar li .menu-nav-active::before {
+    content: '';
+    position: absolute;
+    top: 96%;
+    background: var(--active-icon);
+    width: 100%;
+    height: 3px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-header-bar li .menu-nav-active::before {
+        height: var(--active-md-bord-bottom);
+        top: 95%;
+    }   
+}
+
+.menu-nav-active svg {
+    stroke: var(--active-icon);
+    fill: var(--active-icon) !important;
+}

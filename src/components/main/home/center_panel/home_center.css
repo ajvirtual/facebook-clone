@@ -1,0 +1,23 @@
+.center_main {
+    width: 100%;
+}
+
+.center-post-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 86%;
+    margin: auto;
+}
+
+.center-post-container > * {
+    background-color: var(--fb-second-background);
+    border-radius: .4em;
+    padding: .7em .9em;
+    color: var(--fb-white-font);
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+
+

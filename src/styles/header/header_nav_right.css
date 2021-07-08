@@ -1,0 +1,65 @@
+:root {
+    --icon-size:  
+}
+
+.home_right_side {
+    position: fixed;
+    right: 0;
+}
+
+.right-header-nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-right: 1em;
+}
+
+.right-header-nav-container svg{
+    fill: white;
+}
+
+.right-header-nav-container ul {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.right-header-nav-container ul li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3b3c;
+    border-radius: 50%;
+    height: 2.7em;
+    width: 2.8em;
+    margin-left: .3em;
+    margin-right: .3em;
+    cursor: pointer;
+}
+
+@media (max-width: 920px) {
+    .right-header-nav-container ul li {
+        height: 2.5em;
+        width: 2.6em;
+        margin-left: .2em;
+        margin-right: .2em;
+    }
+}
+
+.right-header-nav-container ul li:hover {
+    background-color: #4e4e4e;
+    transition: all ease-out .2s !important; 
+}
+
+.right-header-nav-container ul li svg {
+    transform: scale(1.2);
+}
+
+.right-header-nav-container ul li .caret-menu-dropdown {
+    font-size: 2.8em !important;
+}
