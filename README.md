@@ -1,2 +1,2 @@
 # facebook-clone
-this is a facebook clone which contains some of real the facebook site functionality
+this is a facebook clone which mimic some of the facebook site functionality
